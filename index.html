@@ -1,45 +1,79 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <title>碧のポートフォリオ</title>
-  </head>
-  <body>
-    <h1>碧</h1>
-    
-    <h2>About</h2>
+<head>
+  <meta charset="UTF-8" />
+  <title>Ao's Art Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 外部CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header>
+  <h1>碧の Art Portfolio</h1>
+</header>
+
+<main>
+
+  <!-- ====== About ====== -->
+  <section>
+    <h2>自己紹介</h2>
     <p>
-      日本の藝術に深い関心がある<br>
-      I have a deep appreciation for Japanese art.
+      日本の伝統、文化をテーマにデジタルアートを制作しています。<br>
+      
     </p>
+  </section>
 
-    <h3>Profile</h3>
-    <ul>
-      <li>碧（Ao）</li>
-      <li>日本在中<br>　Based in Japan.</li>
-    </ul>
+  <!-- ====== Artworks ====== -->
+  <section>
+    <h2>作品一覧</h2>
+    <div class="gallery-grid">
+      <div class="art-card">
+        <img src="images/artwork01.jpg" alt="Art 1">
+        <div class="info">作品タイトル 01（2024）</div>
+      </div>
 
+      <div class="art-card">
+        <img src="images/artwork02.jpg" alt="Art 2">
+        <div class="info">作品タイトル 02（2025）</div>
+      </div>
 
-    <h3>Art Works</h3>
-    <ul>
-      <li><a href="https://github.com/">GitHub</a></li>
-      <li><a href="https://qiita.com/">Qiita</a></li>
-      <li><a href="https://zenn.dev/">Zenn</a></li>
-      <li>
-        作った作品
-        <ul>
-          <li><a href="https://example.com/">作品 1</a></li>
-          <li><a href="https://example.com/">作品 2</a></li>
-        </ul>
-      </li>
-    </ul>
+      <div class="art-card">
+        <img src="images/artwork03.jpg" alt="Art 3">
+        <div class="info">作品タイトル 03（2023）</div>
+      </div>
+    </div>
+  </section>
 
-    <h3>Contact</h3>
-    <ul>
-      <li><a href="https://www.instagram.com/raijin_fujin_369/">Instagram</a></li>
-    </ul>
+  <!-- ====== 和色 × 偉人の言葉 ====== -->
+  <section>
+    <h2>和色と言葉</h2>
+    <p>気になる和色をクリックすると、その色にまつわる言葉がランダムに表示されます。</p>
 
-  </body>
+    <div>
+      <button class="color-btn iro-asu" data-color="asu">藍鼠（あいねず）</button>
+      <button class="color-btn iro-sakura" data-color="sakura">桜色</button>
+      <button class="color-btn iro-matcha" data-color="matcha">抹茶色</button>
+      <button class="color-btn iro-kurenai" data-color="kurenai">紅色</button>
+      <button class="color-btn iro-kin" data-color="kin">金色</button>
+      <button class="color-btn iro-sumi" data-color="sumi">墨色</button>
+    </div>
+
+    <div class="quote-box">
+      <div id="quote-text">和色を選ぶと、ここに言葉が表示されます。</div>
+      <div class="quote-author" id="quote-author"></div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  © 2025 碧
+</footer>
+
+<!-- 外部JS -->
+<script src="ao.js"></script>
+</body>
 </html>
